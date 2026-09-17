@@ -1,0 +1,12 @@
+{
+  "id": "ainetcafe",
+  "name": "ainetcafe",
+  "description": "Kimi K3 on ainetcafe: native MXFP4 weights, OpenAI-compatible endpoint",
+  "categories": ["models"],
+  "activation": { "onStartup": false },
+  "providers": ["ainetcafe"],
+  "setup": {
+    "providers": [ { "id": "ainetcafe", "envVars": ["AINETCAFE_API_KEY"] } ]
+  },
+  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} }
+}
