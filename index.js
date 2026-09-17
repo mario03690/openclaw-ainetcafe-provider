@@ -28,6 +28,9 @@ export const MODEL_CATALOG = [
       maxTokensField: "max_tokens",
       // K3 returns reasoning_content; keep it on assistant turns so multi-step tool loops replay cleanly.
       requiresReasoningContentOnAssistantMessages: true,
+      // The endpoint validates tool schemas against JSON Schema 2020-12, which rejects `$id` values
+      // with a fragment; the model never needs `$id`, so drop it before sending.
+      unsupportedToolSchemaKeywords: ["$id"],
     },
   },
 ];
