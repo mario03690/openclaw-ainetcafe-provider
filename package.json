@@ -1,6 +1,6 @@
 {
   "name": "openclaw-ainetcafe-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenClaw provider plugin for ainetcafe (Kimi K3 at native MXFP4, OpenAI-compatible, https://microquickjs.com/v1).",
   "type": "module",
   "license": "MIT",

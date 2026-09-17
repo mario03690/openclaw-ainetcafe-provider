@@ -5,7 +5,8 @@ OpenClaw provider plugin for [ainetcafe](https://ainetcafe.com/k3/): Kimi K3 ser
 ## Install
 
 ```sh
-openclaw plugins install npm:openclaw-ainetcafe-provider
+openclaw plugins install npm:openclaw-ainetcafe-provider --force --accept-capabilities
+# --force: npm is outside ClawHub review, OpenClaw asks you to confirm the source (this repo is the source)
 export AINETCAFE_API_KEY=sk-...        # https://microquickjs.com → Token Management ($2 sign-up credit)
 openclaw models list --provider ainetcafe --refresh
 openclaw agent --local --model ainetcafe/Kimi-K3 --thinking low -m "Say OK"
